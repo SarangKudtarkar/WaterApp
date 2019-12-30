@@ -10,7 +10,8 @@ Button b1;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        b1=findViewById(R.id.ViewOrder);
- //b1.setOnClickListener();
+   //TODO 1:Add onClicklistener to buttons so they can order cans of water and submit button
+        //TODO 2:The info in fields should be saved so that user can submit while reordering directly
+        //TODO 3:Let the user view the status of their order
     }
 }
