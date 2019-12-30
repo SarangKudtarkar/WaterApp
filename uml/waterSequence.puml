@@ -1,4 +1,8 @@
 @startuml
+
+Owner -> DB: Sign-in/User details(new owner)
+DB->Owner:Acknowledgement
+
 User -> DB: Sign-in/User details(new user)
 DB->User:Acknowledgement
 
@@ -6,10 +10,13 @@ User -> DB: Order details
 DB->User:Ack
 
 DB->Owner:User requirements
-Owner->DB:Ack
+Owner->DB:Ack and discounts
 
 
 User->DB:Payment details
 DB->User:Ack
+
+User->Owner:Order queries
+Owner->User:Order status
 
 @enduml
