@@ -1,0 +1,15 @@
+@startuml
+User -> DB: Sign-in/User details(new user)
+DB->User:Acknowledgement
+
+User -> DB: Order details
+DB->User:Ack
+
+DB->Owner:User requirements
+Owner->DB:Ack
+
+
+User->DB:Payment details
+DB->User:Ack
+
+@enduml
