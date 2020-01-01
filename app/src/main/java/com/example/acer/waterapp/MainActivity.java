@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
+    public static final String PREFS_NAME = "MyPrefsFile";
 Button b1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
